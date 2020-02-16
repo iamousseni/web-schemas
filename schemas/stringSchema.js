@@ -30,6 +30,9 @@ _.extend(StringSchema.prototype, {
     isNumeric: function () {
         return this.is(/^-?[0-9]+$/);
     },
+    isDate: function() {
+        return this.is(^\d{4}\-(0[1-9]|1[012])\-(0[1-9]|[12][0-9]|3[01])$);
+    },
     isHex: function () {
         return this.is(/^[0-9a-fA-F]+$/);
     },
