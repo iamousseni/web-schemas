@@ -28,7 +28,7 @@ _.extend(StringSchema.prototype, {
         return this.is(/^[a-zA-Z0-9]+$/);
     },
     isNumeric: function () {
-        return this.is(/^-?[0-9]+$/);
+        return this.is(/^[+-]?\d+((\.|\,)\d+)?$/);
     },
     isHex: function () {
         return this.is(/^[0-9a-fA-F]+$/);
